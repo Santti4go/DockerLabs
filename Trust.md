@@ -64,3 +64,10 @@ sudo /usr/bin/vim -c ':!/bin/bash'
 ```
 Esto me va a abrir una terminal de bash en la cual seré un usuario root. Una vez que cierre esa bash me va a devolver a vim. Sin embargo acá ya termina la máquina pues logré acceder al usuario root.
 
+## Resumen del ataque
+
+Este método funcionó por lo siguiente:
+* Los puertos de SSH y HTTP (22,80) están abiertos
+* Encontramos un endpoint que advirtió del nombre de un usuario: Mario
+* La password del usuario era muy simple y se le pudo hacer fuerza bruta, logrando conexión via SSH
+* El usuario puede correr `/usr/bin/vim` como root
