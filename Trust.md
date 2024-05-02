@@ -31,7 +31,8 @@ Da información sobre el sistema operativo, la versión de Apache o lo que estuv
 ```
 gobuster dir -u http://172.17.0.2 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 200 -x php,txt
 ```
-Hago fuzzing por medio de gobuster y utilizando una lista de palabras 
+Hago fuzzing por medio de gobuster y utilizando una lista de palabras
+
 `dir: para utilizar el modo de enumeración de archivos/directorios `\
 `-w <PATH>: la lista de palabras a utilizar para el fuzz`\
 `-t X: cantidad de threads concurrentes`\
