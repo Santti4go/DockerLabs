@@ -14,7 +14,7 @@ Cada parámetro:
 `-vvv: que sea bien verboso, a medida que encuentra un resultado, lo escupa`\
 `---min-rate XXXX: que sea veloz y no mande menos de tantos pkg por segundo`\
 `-n: no quiero resolución DNS, es lento`\
-`-Pn: quiero evitar que haga host discovery, puede ser lento`
+`-Pn: deshabilito ICMP echo requests para ahorrar tiempo`
 
 ##3) Una vez identificados posibles puertos abiertos quiero ser más exhaustivo con el análisis de cada uno
 ```
